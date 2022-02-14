@@ -1,0 +1,12 @@
+[package]
+name = "select-two-many-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sea-orm = { version = "0.6", features = ["sqlx-postgres", "runtime-tokio-native-tls", "macros"], default-features = false }
+tokio = { version = "1.15", features = ["macros"] }
+log = "0.4"
+simple_logger = "2.1"
